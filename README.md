@@ -1,15 +1,29 @@
 # Nigel-Efeose Akhuetie
 
-**Economics @ York University (Toronto, ON)** · AI Agent Evaluation, Applied Workflows & Product Operations  
-[LinkedIn](https://www.linkedin.com/in/nigel-efeose-akhuetie-911a75298) · [Email](mailto:nigelose10@gmail.com)
+**AI Systems Architect, Applied Economist (York University, Toronto) & Founder building deterministic safety gates, evaluation harnesses, and multi-agent software with Claude Code.**
 
 ---
 
-### Focus
+### Open-Source AI Infrastructure & Evaluation Tooling
 
-I study Economics at York University and build practical evaluation harnesses and operational tooling for AI agents. My focus is the gap between **fluent model outputs** and **verified end-to-end state changes**—specifically measuring asymmetric operational risk (unauthorized refunds, unverified account mutations, hallucinated tool status) in customer-facing workflows.
+- **[`electron-no-stealth-gate`](https://github.com/nigelose10/electron-no-stealth-gate)** *(TypeScript / Node.js ESM · Zero Dependencies)*  
+  Static and packaged-binary (`app.asar` + `bplist00` + native `.node`) CI gate extracted from **Geek v2** (my local-first student OS). Runs up to 30 fixed-point normalization passes (decoding hex/unicode escapes, HTML entities, string concatenation, `String.fromCharCode`, `.reverse().join('')`, and same-file `const` propagation) to block **55 screen-capture exclusion, taskbar/Dock hiding, and LMS quiz-write bypass probes**. Backed by **138 `node:test` assertions**.
 
-### Featured Public Work
+- **[`agent-reality-check`](https://github.com/nigelose10/agent-reality-check)** *(Python 3 · Zero Dependencies)*  
+  Deterministic evaluation harness grading tool-using customer-operations agents across **20 adversarial and edge-case billing scenarios** (indirect prompt injections inside user profile fields, refund cap violations, SLA arithmetic errors, and unverified account actions). Backed by **6/6 grader invariant unit tests**.
 
-- **[`agent-reality-check`](https://github.com/nigelose10/agent-reality-check)** — Deterministic Python evaluation harness (`grade.py` + 20 synthetic subscription-support scenarios) inspired by Anthropic's [*Demystifying Evals for AI Agents*](https://www.anthropic.com/research/demystifying-evals-for-ai-agents) and Stripe's integration benchmarks. Separates Action Accuracy, Final-State Integrity, Evidence Grounding, and Safe Escalation Rate, and includes [`CASE_STUDY.md`](https://github.com/nigelose10/agent-reality-check/blob/main/CASE_STUDY.md) on asymmetric loss in autonomous support deployment.
-- **[`agentprobe`](https://github.com/nigelose10/agentprobe)** — Open-source testing, CI & monitoring dashboard prototype (Next.js / TypeScript PWA + full product specification) for inspecting Model Context Protocol (MCP) server tool calls, latency, and error boundaries.
+- **[`agentprobe`](https://github.com/nigelose10/agentprobe)** *(Python 3 / TypeScript)*  
+  Open-source testing, CI & behavioural assertion suite for Model Context Protocol (MCP) servers and tool-calling agents.
+
+---
+
+### Flagship Systems & Production Client Builds
+
+- **Geek v2 (`nigelose10/geek` — Private Monorepo)**  
+  10-workspace `pnpm` monorepo (`Electron 44.7`, `React 19`, `TypeScript 5.9`, `SQLite + FTS5`, `Zod 4.6`, `Vercel AI SDK 7.0`, `Convex`, `Stripe`) built across **87 commits**, **8 ADRs**, and **6 operational runbooks**. Verified by **1,723 desktop unit tests**, **595 Zod contract tests**, **190 gate tests**, **134 Playwright `_electron` E2E tests** against a local mock Moodle LMS, **168 visual/axe accessibility snapshots**, and an **88-case adversarial prompt-injection evaluation corpus (`88/88 passing, 0 invariant breaches`)**.
+- **Ehi Kings Real Estate (`ehi-kings-real-estate` — Commercial Client Build, Lagos)**  
+  Full-stack real estate property & lead platform built and shipped for a paying commercial client in Lagos.
+- **The 6ix RPG (`nigelose10/neverland` — Multi-Agent Worktree Build)**  
+  Browser-based 3D Toronto world (`React`, `TypeScript`, `Three.js / @react-three/fiber`, `Zustand`) shipped across **54 commits** using parallel Claude Code git worktrees against a locked PRD (`v1.3`) to deliver **8 playable 3D Toronto neighbourhood scenes**.
+
+📫 **Contact:** [nigelose10@gmail.com](mailto:nigelose10@gmail.com) · [LinkedIn](https://www.linkedin.com/in/nigel-efeose-akhuetie-911a75298) · Toronto, ON (Canadian Citizen)
